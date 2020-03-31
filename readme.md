@@ -23,7 +23,6 @@
 ├── dev
 |   ├── images
 |   ├── js
-|   ├── pages
 |   ├── scss
 |   └── templates
 ├── dist
