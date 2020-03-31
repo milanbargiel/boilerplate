@@ -1,0 +1,9 @@
+<!-- index.nunjucks -->
+{% set title = 'boilerplate' %}
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+<h1>boilerplate</h1>
+
+{% endblock %}
