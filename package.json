@@ -5,11 +5,18 @@
   "main": "index.js",
   "scripts": {
     "handlebars": "hbs 'dev/templates/[!_]*.hbs' --partial 'dev/templates/_*.hbs' --output 'dist/'",
-    "watch:templates": "onchange 'dev/templates/**/*.hbs' -- npm run handlebars"
+    "watch:templates": "onchange 'dev/templates/**/*.hbs' -- npm run handlebars",
+    "serve": "browser-sync start --server 'dist' --files 'dist'"
+  },
+  "scriptsComments": {
+    "handlebars": "render templates with partials (filename starts with underscore) to dist folder",
+    "watch:templates": "when a handlebars file change run handlebars to re-render",
+    "serve": "start a local dev server and reload browser on filechange in dist folder"
   },
   "author": "Milan Bargiel",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "hbs-cli": "^1.3.0",
     "onchange": "^6.1.0"
   }
