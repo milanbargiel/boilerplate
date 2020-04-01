@@ -4,7 +4,7 @@
   "description": "A boilerplate for creating websites with nunjucks based templates.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "handlebars": "hbs 'dev/templates/[!_]*.hbs' --partial 'dev/templates/_*.hbs' --output 'dist/'"
   },
   "author": "Milan Bargiel",
   "license": "ISC",
