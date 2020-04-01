@@ -2,15 +2,16 @@
   "name": "boilerplate",
   "version": "1.0.0",
   "description": "A boilerplate for creating websites with handlebars based templates.",
-  "main": "index.js",
   "scripts": {
     "handlebars": "hbs 'dev/templates/[!_]*.hbs' --partial 'dev/templates/_*.hbs' --output 'dist/'",
+    "image": "imagemin 'dev/images/*.{png,jpg,gif,svg,ico}' --out-dir=dist/images",
     "watch:templates": "onchange 'dev/templates/**/*.hbs' -- npm run handlebars",
     "serve": "browser-sync start --server 'dist' --files 'dist'",
     "start": "run-p serve watch:templates"
   },
   "scriptsComments": {
     "handlebars": "render templates with partials (filename starts with underscore) to dist folder",
+    "image": "copy images to dist folder",
     "watch:templates": "when a handlebars file change run handlebars to re-render",
     "serve": "start a local dev server and reload browser on filechange in dist folder",
     "start": "run serve and watch tasks in parallel"
@@ -20,6 +21,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "hbs-cli": "^1.3.0",
+    "imagemin-cli": "^5.1.0",
     "npm-run-all": "^4.1.5",
     "onchange": "^6.1.0"
   }
