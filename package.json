@@ -4,11 +4,13 @@
   "description": "A boilerplate for creating websites with nunjucks based templates.",
   "main": "index.js",
   "scripts": {
-    "handlebars": "hbs 'dev/templates/[!_]*.hbs' --partial 'dev/templates/_*.hbs' --output 'dist/'"
+    "handlebars": "hbs 'dev/templates/[!_]*.hbs' --partial 'dev/templates/_*.hbs' --output 'dist/'",
+    "watch:templates": "onchange 'dev/templates/**/*.hbs' -- npm run handlebars"
   },
   "author": "Milan Bargiel",
   "license": "ISC",
   "devDependencies": {
-    "hbs-cli": "^1.3.0"
+    "hbs-cli": "^1.3.0",
+    "onchange": "^6.1.0"
   }
 }
