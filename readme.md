@@ -3,10 +3,10 @@
 ##### *A simple boilerplate for creating websites with handlebars based templates.*
 Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-scripts/.
 
-### Install and Go
+### Set up a development server and build files for deployment
 - run `npm install` from your command line to install npm modules
-- run `npm start` to start a local development server and reload browser on filechange
-- when finished, copy files from `dist` folder to put on your webserver
+- run `npm start` to start a local development server that reloads browser on filechange
+- when finished developing, copy all files from `dist` folder to put on your webserver
 
 ### Folder structure
 ```bash
