@@ -1,7 +1,7 @@
 {
   "name": "boilerplate",
   "version": "1.0.0",
-  "description": "A boilerplate for creating websites with handlebars based templates.",
+  "description": "A simple boilerplate for creating websites with handlebars based templates.",
   "author": "Milan Bargiel",
   "license": "MIT",
   "scripts": {
@@ -9,9 +9,11 @@
     "image": "imagemin 'dev/images/**/*.{png,jpg,gif,svg,ico}' --out-dir=dist/images",
     "scss": "node-sass 'dev/scss' --output 'dist/'",
     "postcss": "postcss --use autoprefixer --replace 'dist/*.css' --no-map",
+    "javascript": "copyfiles --up 2 'dev/js/**/*.js' 'dist/js'",
     "watch:templates": "onchange 'dev/templates' -- npm run handlebars",
     "watch:images": "onchange 'dev/images' -- npm run image",
     "watch:scss": "onchange 'dev/scss' -- run-s scss postcss",
+    "watch:javascript": "onchange 'dev/js' -- npm run javascript",
     "watch": "npm-run-all --parallel --silent watch:*",
     "serve": "browser-sync start --server 'dist' --files 'dist'",
     "start": "run-p serve watch"
@@ -21,12 +23,14 @@
     "image": "optimize images and output in dist folder",
     "scss": "compile scss to css",
     "postcss": "use postcss to autoprefix css-files in dist-folder without sourcemap in output",
+    "javascript": "copy all javascript files to dist folder, without copying the dev folder-structure",
     "serve": "start a local dev server and reload browser on filechange in dist folder",
     "start": "run serve and watch tasks in parallel"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.5",
     "browser-sync": "^2.26.7",
+    "copyfiles": "^2.2.0",
     "hbs-cli": "^1.3.0",
     "imagemin-cli": "^5.1.0",
     "node-sass": "^4.13.1",
