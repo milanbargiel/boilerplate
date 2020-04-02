@@ -1,23 +1,25 @@
 # Frontend Boilerplate: 
-### Monitor Nunjucks-, Sass-, JS-, Image-files for change
+### Monitor Handlebars-, Sass-, JS-, Image-files for change
 
 **When Nunjucks-File changes:**
-- build html files from templates and partials
+- Build html files in dist folder from templates and partials
 - Reload Browser
 
-**When Sass file changes:**
-- Compile Sass to Css
+**When Scss file changes:**
+- Lint Scss and output errors in console
+- Compile Scss to Css and copy to dist folder
 - add Vendor prefixes
 - Reload Browser
 
 **When JS file changes:**
+- Copy to dist folder
 - Reload Browser
 
 **When Image file changes:**
-- Optimize Image
+- Optimize Image and copy to dist folder
 - Reload Browser
 
-### Sketch of Folder structure
+### Folder structure after building files
 ```bash
 ├── dev
 |   ├── images
@@ -25,8 +27,9 @@
 |   ├── scss
 |   └── templates
 ├── dist
-|   ├── css
 |   ├── images
-|   └── js
+|   ├── js
+|   ├── index.html
+|   └── main.css
 └── package.json
 ```
