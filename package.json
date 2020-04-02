@@ -6,19 +6,21 @@
   "license": "MIT",
   "scripts": {
     "handlebars": "hbs 'dev/templates/[!_]*.hbs' --partial 'dev/templates/_*.hbs' --output 'dist/'",
-    "image": "imagemin 'dev/images/*.{png,jpg,gif,svg,ico}' --out-dir=dist/images",
+    "image": "imagemin 'dev/images/**/*.{png,jpg,gif,svg,ico}' --out-dir=dist/images",
     "scss": "node-sass 'dev/scss' --output 'dist/'",
-    "postcss": "postcss --use autoprefixer --replace 'dist/*.css'",
-    "watch:templates": "onchange 'dev/templates/**/*.hbs' -- npm run handlebars",
+    "postcss": "postcss --use autoprefixer --replace 'dist/*.css' --no-map",
+    "watch:templates": "onchange 'dev/templates' -- npm run handlebars",
+    "watch:images": "onchange 'dev/images' -- npm run image",
+    "watch:scss": "onchange 'dev/scss' -- run-s scss postcss",
+    "watch": "npm-run-all --parallel --silent watch:*",
     "serve": "browser-sync start --server 'dist' --files 'dist'",
-    "start": "run-p serve watch:templates"
+    "start": "run-p serve watch"
   },
   "scriptsComments": {
     "handlebars": "render templates with partials (filename starts with underscore) to dist folder",
     "image": "optimize images and output in dist folder",
     "scss": "compile scss to css",
-    "postcss": "Use postcss to autoprefix css-files in dist-folder",
-    "watch:templates": "when a handlebars file change run handlebars to re-render",
+    "postcss": "use postcss to autoprefix css-files in dist-folder without sourcemap in output",
     "serve": "start a local dev server and reload browser on filechange in dist folder",
     "start": "run serve and watch tasks in parallel"
   },
