@@ -1,6 +1,29 @@
-# Frontend Boilerplate: 
-### Monitor Handlebars-, Sass-, JS-, Image-files for change
+# Frontend Boilerplate:
 
+##### *A simple boilerplate for creating websites with handlebars based templates.*
+Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-scripts/.
+
+### Install and Go
+- run `npm install` from your command line to install npm modules
+- run `npm start` to start a local development server and reload browser on filechange
+- when finished, copy files from `dist` folder to put on your webserver
+
+### Folder structure
+```bash
+├── dev
+|   ├── images
+|   ├── js
+|   ├── scss
+|   └── templates
+├── dist
+|   ├── images
+|   ├── js
+|   ├── index.html
+|   └── main.css
+└── package.json
+```
+
+### Npm Scritps based automation
 **When Nunjucks-File changes:**
 - Build html files in dist folder from templates and partials
 - Reload Browser
@@ -18,18 +41,3 @@
 **When Image file changes:**
 - Optimize Image and copy to dist folder
 - Reload Browser
-
-### Folder structure after building files
-```bash
-├── dev
-|   ├── images
-|   ├── js
-|   ├── scss
-|   └── templates
-├── dist
-|   ├── images
-|   ├── js
-|   ├── index.html
-|   └── main.css
-└── package.json
-```
