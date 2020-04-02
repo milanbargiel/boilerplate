@@ -1,5 +1,13 @@
-$font-size: 32px;
+@font-face {
+  font-family: 'PT Mono';
+  src: url('../fonts/PTMono-Regular.ttf');
+}
 
-h1 {
-  font-size: $font-size;
+// basic styles
+$base-font-size: 18px;
+$font-family: 'PT Mono', monospace;
+
+body {
+  font-size: $base-font-size;
+  font-family: $font-family;
 }

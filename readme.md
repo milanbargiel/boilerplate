@@ -11,11 +11,13 @@ Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-sc
 ### Folder structure
 ```bash
 ├── dev
+|   ├── fonts
 |   ├── images
 |   ├── js
 |   ├── scss
 |   └── templates
 ├── dist
+|   ├── fonts
 |   ├── images
 |   ├── js
 |   ├── index.html
@@ -35,6 +37,10 @@ Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-sc
 - Reload Browser
 
 **When JS file changes:**
+- Copy to dist folder
+- Reload Browser
+
+**When font file changes:**
 - Copy to dist folder
 - Reload Browser
 
