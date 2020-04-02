@@ -8,7 +8,6 @@
 **When Sass file changes:**
 - Compile Sass to Css
 - add Vendor prefixes
-- add Flexbox fixes
 - Reload Browser
 
 **When JS file changes:**
