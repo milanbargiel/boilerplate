@@ -11,14 +11,14 @@ Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-sc
 ### Folder structure
 ```bash
 ├── dev
-|   ├── fonts
-|   ├── images
+|   ├── assets
+|   |   └── images
 |   ├── js
 |   ├── scss
 |   └── templates
 ├── dist
-|   ├── fonts
-|   ├── images
+|   ├── assets
+|   |   └── images
 |   ├── js
 |   ├── index.html
 |   └── main.css
@@ -40,7 +40,7 @@ Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-sc
 - Copy to dist folder
 - Reload Browser
 
-**When font file changes:**
+**When asset file changes:**
 - Copy to dist folder
 - Reload Browser
 
