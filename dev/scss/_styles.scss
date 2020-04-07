@@ -1,11 +1,29 @@
+// global styles
 @font-face {
-  font-family: 'PT Mono';
-  src: url('../fonts/PTMono-Regular.ttf');
+  font-family: 'Overpass Mono';
+  src: url('../assets/OverpassMono-Regular.ttf');
+  font-weight: normal;
 }
 
-// basic styles
+@font-face {
+  font-family: 'Overpass Mono';
+  src: url('../assets/OverpassMono-Bold.ttf');
+  font-weight: bold;
+}
+
+html {
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 $base-font-size: 18px;
-$font-family: 'PT Mono', monospace;
+$font-family: 'Overpass Mono', monospace;
 
 body {
   font-size: $base-font-size;
