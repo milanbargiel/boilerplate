@@ -6,7 +6,7 @@ Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-sc
 ### Set up a development server and build files for deployment
 - run `yarn install` from your command line to install npm modules
 - run `yarn start` to start a local development server that reloads browser on filechange
-- when finished developing, copy all files from `dist` folder to put on your webserver
+- when finished developing, copy all files from `out` folder to put on your webserver
 
 ### Folder structure
 ```bash
@@ -16,7 +16,7 @@ Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-sc
 |   ├── js
 |   ├── scss
 |   └── templates
-├── dist
+├── out
 |   ├── assets
 |   |   └── images
 |   ├── js
@@ -27,25 +27,25 @@ Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-sc
 
 ### Npm Scritps based automation
 **When Handlebars-File changes:**
-- Build html files in dist folder from templates and partials
+- Build html files in `/out` folder from templates and partials
 - Reload Browser
 
 **When Scss file changes:**
 - Lint Scss and output errors in console
-- Compile Scss to Css and copy to dist folder
+- Compile Scss to Css and copy to out folder
 - add Vendor prefixes
 - Reload Browser
 
 **When JS file changes:**
-- Copy to dist folder
+- Copy to `/out` folder
 - Reload Browser
 
 **When asset file changes:**
-- Copy to dist folder
+- Copy to `/out` folder
 - Reload Browser
 
 **When Image file changes:**
-- Optimize Image and copy to dist folder
+- Optimize Image and copy to `/out` folder
 - Reload Browser
 
 ### Update all node-modules to latest version
