@@ -4,8 +4,8 @@
 Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-scripts/.
 
 ### Set up a development server and build files for deployment
-- run `npm install` from your command line to install npm modules
-- run `npm start` to start a local development server that reloads browser on filechange
+- run `yarn install` from your command line to install npm modules
+- run `yarn start` to start a local development server that reloads browser on filechange
 - when finished developing, copy all files from `dist` folder to put on your webserver
 
 ### Folder structure
