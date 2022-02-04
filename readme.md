@@ -47,3 +47,8 @@ Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-sc
 **When Image file changes:**
 - Optimize Image and copy to dist folder
 - Reload Browser
+
+### Update all node-modules to latest version
+- Run `yarn outdated` to see which modules are outdated
+- Upgrade all to their latest version with `yarn upgrade --latest`
+- Check if everything continues to function as expected
