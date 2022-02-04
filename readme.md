@@ -27,13 +27,13 @@ Inspired by https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/ and ht
 
 ### Npm Scritps based automation
 **When Handlebars-File changes:**
-- Build html files in `/out` folder from templates and partials
+- Build html files in `/out` folder from [Handlebars](https://handlebarsjs.com/) templates and partials
 - Reload Browser
 
 **When Scss file changes:**
-- Lint Scss and output errors in console
+- Lint scss files with [Stylelint](https://stylelint.io/) and output potential errors in console
 - Compile Scss to Css and copy to out folder
-- add Vendor prefixes
+- Add Vendor prefixes
 - Reload Browser
 
 **When JS file changes:**
@@ -45,10 +45,10 @@ Inspired by https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/ and ht
 - Reload Browser
 
 **When Image file changes:**
-- Optimize Image and copy to `/out` folder
+- Optimize Images with [imagemin](https://github.com/imagemin/imagemin) and copy to `/out` folder
 - Reload Browser
 
-### Update all node-modules to latest version
+### Update all node-modules to their latest version
 - Run `yarn outdated` to see which modules are outdated
-- Upgrade all to their latest version with `yarn upgrade --latest`
+- Upgrade all modules to their latest version with `yarn upgrade --latest`
 - Check if everything continues to function as expected
