@@ -26,7 +26,7 @@ Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-sc
 ```
 
 ### Npm Scritps based automation
-**When Nunjucks-File changes:**
+**When Handlebars-File changes:**
 - Build html files in dist folder from templates and partials
 - Reload Browser
 
