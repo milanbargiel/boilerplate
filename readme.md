@@ -1,7 +1,7 @@
 # Frontend Boilerplate:
 
 ##### *A simple boilerplate for creating websites with handlebars based templates.*
-Inspired by https://www.keithcirkel.co.uk/ and https://css-tricks.com/why-npm-scripts/.
+Inspired by https://www.keithcirkel.co.uk/how-to-use-npm-as-a-build-tool/ and https://css-tricks.com/why-npm-scripts/.
 
 ### Set up a development server and build files for deployment
 - run `yarn install` from your command line to install npm modules
