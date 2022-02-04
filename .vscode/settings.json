@@ -1,0 +1,12 @@
+{
+    "search.exclude": {
+        "**/out": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[scss]": {
+        "editor.formatOnSave": true
+    }
+}
