@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-recommended",
+  "extends": "stylelint-config-standard-scss",
   "ignoreFiles": [
     "dev/scss/vendor/_normalize.scss",
     "out/*.css"

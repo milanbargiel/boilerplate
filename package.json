@@ -58,7 +58,9 @@
     "onchange": "^7.1.0",
     "postcss-cli": "^9.1.0",
     "rimraf": "^3.0.2",
-    "stylelint": "^14.3.0",
-    "stylelint-config-recommended": "^6.0.0"
+    "stylelint": "^14.3.0"
+  },
+  "dependencies": {
+    "stylelint-config-standard-scss": "^3.0.0"
   }
 }

@@ -1,6 +1,7 @@
 /* global styles */
 
 /* Uncomment font-face, if you wish to use custom fonts */
+
 /* Keep in mind, that file size increases with custom fonts */
 
 /* @font-face {
@@ -33,8 +34,8 @@ a {
 }
 
 $base-font-size: 18px;
-$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+$font-family: -apple-system, blinkmacsystemfont, segoe ui, roboto, oxygen,
+  ubuntu, cantarell, fira sans, droid sans, helvetica neue, sans-serif;
 
 body {
   font-size: $base-font-size;
