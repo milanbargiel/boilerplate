@@ -1,5 +1,9 @@
 /* global styles */
-@font-face {
+
+/* Uncomment font-face, if you wish to use custom fonts */
+/* Keep in mind, that file size increases with custom fonts */
+
+/* @font-face {
   font-family: 'Overpass Mono';
   src: url('../assets/OverpassMono-Regular.ttf');
   font-weight: normal;
@@ -10,6 +14,7 @@
   src: url('../assets/OverpassMono-Bold.ttf');
   font-weight: bold;
 }
+*/
 
 html {
   box-sizing: border-box;
@@ -22,10 +27,26 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 $base-font-size: 18px;
-$font-family: 'Overpass Mono', monospace;
+$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
 body {
   font-size: $base-font-size;
   font-family: $font-family;
+}
+
+.content {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
